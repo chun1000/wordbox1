@@ -1,0 +1,28 @@
+﻿<Window x:Class="WordBox.BasicSettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordBox"
+        mc:Ignorable="d"
+        Title="설정창" Height="271.598" Width="481.805" KeyDown="Window_KeyDown">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="63" Margin="10,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="443"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="31" Margin="10,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="443"/>
+        <Label Content="시험 데이터 경로:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="철자 시험 설정" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="전체 시험 설정" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxAddress" HorizontalAlignment="Left" Height="23" Margin="120,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297" IsReadOnly="True"/>
+        <Button x:Name="btnAddress" Content="..." HorizontalAlignment="Left" Margin="422,41,0,0" VerticalAlignment="Top" Width="22" Click="BtnAddress_Click"/>
+        <CheckBox x:Name="checkRetake" Content="재시험여부" HorizontalAlignment="Left" Margin="20,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.158,4.718"/>
+        <CheckBox x:Name="checkFirstLetterHint" Content="첫글자힌트" HorizontalAlignment="Left" Margin="105,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.158,4.718"/>
+        <CheckBox x:Name="checkLastLetterHint" Content="끝글자힌트" HorizontalAlignment="Left" Margin="20,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.158,4.718"/>
+        <CheckBox x:Name="CheckLetterNumHint" Content="글자수힌트" HorizontalAlignment="Left" Margin="190,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.158,4.718"/>
+        <Button x:Name="btnApplying" Content="적용하기(Enter)" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="212" Height="35" Click="BtnApplying_Click"/>
+        <Button x:Name="btnEsc" Content="나가기(Esc)" HorizontalAlignment="Left" Margin="242,186,0,0" VerticalAlignment="Top" Width="211" Height="35" Click="BtnEsc_Click"/>
+        <Label Content="한번에 시험 볼 단어:" HorizontalAlignment="Left" Margin="120,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxWordPerExam" HorizontalAlignment="Left" Height="23" Margin="242,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+
+    </Grid>
+</Window>
